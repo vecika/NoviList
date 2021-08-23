@@ -1,0 +1,51 @@
+name: Bug Report
+labels: [bug]
+body:
+
+- type: dropdown
+    id: browsers
+    attributes:
+      label: Severity
+      options:
+        - trivial
+        - minor
+        - major
+        - critical
+        - blocker
+
+ - type: dropdown
+    id: version
+    attributes:
+      label: Operating System
+      options:
+        - Android
+        - iOS
+    validations:
+      required: true
+
+- type: input
+    id: contact
+    attributes:
+      label: Bug description
+    validations:
+      required: true
+
+- type: input
+    id: contact
+    attributes:
+      label: Expected behaviour
+    validations:
+      required: true
+
+ - type: textarea
+    id: stepsToReproduce
+    attributes:
+      label: Steps to reproduce:
+    validations:
+      required: true
+ 
+  - type: textarea
+    id: logs
+    attributes:
+      label: Screenshots or other relevant data
+ 
